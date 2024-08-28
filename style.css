@@ -1,0 +1,41 @@
+* {
+  overflow: hidden;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  background-color: rgb(38, 58, 103);
+  overflow: hidden;
+}
+main {
+  width: 70vw;
+}
+
+main .content-area {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: inherit;
+  color: #ddd;
+}
+
+main .nome {
+  text-shadow: rgb(56, 175, 255) 5px 0 20px;
+  font-size: 5vw;
+}
+
+main .texto {
+  font-size: 2vw;
+  word-spacing: 10px;
+  letter-spacing: 3px;
+}
+
+@media (max-width: 1000px) {
+  main .texto {
+    font-size: 4vw;
+  }
+}
